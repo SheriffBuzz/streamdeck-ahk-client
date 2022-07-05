@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <title>Library Function</title>
+    <link rel="stylesheet" href="../sdpi.css">
+</head>
+<body>
+    <div class="sdpi-item">
+        <div class="sdpi-item-label">Function Name</div>
+        <input class="sdpi-item-value" id="library-function-name" onchange="updateSettings()" value="" placeholder="Function Name">
+    </div>
+    <div class="sdpi-item">
+        <div class="sdpi-item-label">Persistent Script</div>
+        <input class="sdpi-item-value" id="call-library-function-persistent-scriptname" onchange="updateSettings()" value="" placeholder="ScriptHook">
+    </div>
+    <div type="checkbox" class="sdpi-item">
+        <div class="sdpi-item-label">Func Output</div>
+        <div class="sdpi-item-value">
+            <div class="sdpi-item-child">
+                <input id="post-processor-cfg-msgbox" type="checkbox" value="left" onchange="updateSettings()">
+                <label for="post-processor-cfg-msgbox"><span></span>Msgbox</label>
+                <input id="post-processor-cfg-traytip" type="checkbox" value="center" onchange="updateSettings()">
+                <label for="post-processor-cfg-traytip"><span></span>Traytip</label>
+                <input id="post-processor-cfg-clipboard" type="checkbox" value="right" onchange="updateSettings()">
+                <label for="post-processor-cfg-clipboard"><span></span>Clip</label>
+            </div>
+            <br />
+            <div class="sdpi-item-child">
+                <input id="post-processor-cfg-guipopup" type="checkbox" value="left" onchange="updateSettings()">
+                <label for="post-processor-cfg-guipopup"><span></span>GuiPopup</label>
+            </div>
+            <br />
+            <div class="sdpi-item-child">
+                <input id="post-processor-cfg-fileexplorer" type="checkbox" value="left" onchange="updateSettings()">
+                <label for="post-processor-cfg-fileexplorer"><span></span>Explorer</label>
+            </div>
+            <br />
+            <div class="sdpi-item-child">
+                <input id="post-processor-cfg-webbrowser" type="checkbox" value="left" onchange="updateSettings()">
+                <label for="post-processor-cfg-webbrowser"><span></span>Browser</label>
+            </div>
+            <br />
+            <div class="sdpi-item-child" id="post-processor-cfg-webbrowser-options">
+                <select class="sdpi-item-value select" value="center" style="width: 65px;" id="post-processor-webbrowser-browser" onchange="updateSettings()">
+                    <option value="chrome.exe" selected>Chrome</option>
+                    <option value="msedge.exe">Edge</option>
+                </select>
+                <input id="post-processor-cfg-webbrowser-incognito" type="checkbox" value="right" onchange="updateSettings()">
+                <label for="post-processor-cfg-webbrowser-incognito"><span></span>Incognito</label>
+            </div>
+        </div>
+    </div>
+    <div class="sdpi-item">
+        <div class="sdpi-item-label">Function Parameters</div>
+        <button class="sdpi-item-value" id="addargs" onclick="addAArg()">+ Param</button>
+        <button class="sdpi-item-value" id="removeargs" onclick="removeAArg()">- Param</button>
+    </div>
+
+    <div id="aargContainer">
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Arg</div>
+            <input class="sdpi-item-value" onchange="updateSettings()" value="" placeholder="Arg">
+        </div>
+    </div>
+
+    <script src="../Index.js"></script>
+</body>
+</html>

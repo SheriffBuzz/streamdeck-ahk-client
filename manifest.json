@@ -1,0 +1,63 @@
+{
+  "Actions": [
+    {
+      "Icon": "Images/ahkSettings",
+      "Name": "AhkSettings",
+      "States": [
+        {
+          "Image": "Images/ahkSettings",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Ahk settings",
+      "UUID": "com.sheriffbuzz.ahkclient.ahkglobalsettings",
+      "PropertyInspectorPath": "PropertyInspector/AhkGlobalSettings/Index.html"
+    },
+    {
+      "Icon": "Images/ahkIcon",
+      "Name": "Ahk Request",
+      "States": [
+        {
+          "Image": "Images/ahkIcon",
+          "TitleAlignment": "middle",
+          "FontSize": "9"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Send requests with params to ahk script",
+      "UUID": "com.sheriffbuzz.ahkclient.ahkrequest",
+      "PropertyInspectorPath": "PropertyInspector/AhkRequest/Index.html"
+    },
+    {
+      "Icon": "Images/ahkLibrary",
+      "Name": "Library Function",
+      "States": [
+        {
+          "Image": "Images/ahkLibrary",
+          "TitleAlignment": "middle",
+          "FontSize": "9"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Call Library Function",
+      "UUID": "com.sheriffbuzz.ahkclient.ahklibraryfunction",
+      "PropertyInspectorPath": "PropertyInspector/AhkLibraryFunction/Index.html"
+    }
+  ],
+  "Author": "Sheriff Buzz",
+  "Description": "Plugin for sending requests to ahk scripts with command line arguments",
+  "Name": "AhkClient",
+  "Icon": "Images/ahkIcon",
+  "Version": "1.0",
+  "SDKVersion": 2,
+  "Software": { "MinimumVersion": "4.1" },
+  "CodePath": "AhkClient.exe",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ]
+}

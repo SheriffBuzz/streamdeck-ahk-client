@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <title>AHK Global Settings</title>
+    <link rel="stylesheet" href="../sdpi.css">
+</head>
+<body>
+    <div class="sdpi-item">
+        <div class="sdpi-item-label">ClipFormat</div>
+        <input class="sdpi-item-value" id="ClipboardFormat" onchange="updateGlobalSettings()" value="" placeholder="%clip%">
+    </div>
+    <div class="sdpi-item">
+        <div class="sdpi-item-label">Autohotkey.exe path</div>
+        <div class="sdpi-item-group file" id="filepickergroup">
+            <input class="sdpi-item-value" type="file" value="" id="autohotkey-exe-path" accept=".exe" onchange="updateGlobalSettings()">
+            <label class="sdpi-file-info" for="autohotkey-exe-path">no file...</label>
+            <label class="sdpi-file-label" for="autohotkey-exe-path">Choose file...</label>
+        </div>
+    </div>
+    <div class="sdpi-item">
+        <div class="sdpi-item-label">Default Persistent Script</div>
+        <input class="sdpi-item-value" id="call-library-function-default-scriptname" onchange="updateGlobalSettings()" value="" placeholder="ScriptHook">
+    </div>
+    <div class="sdpi-item">
+        <div class="sdpi-item-label">Details</div>
+        <details class="sdpi-item-value">
+            <summary></summary>
+            <p>WinTitle of AHK Script that includes ScriptHook.ahk. This is used by sendMessage WM_COPYDATA for sending the request to the correct window.</p>
+            <p>By filling in a default value, this field will not be required on the Library Function action (unless you are sending a request to a 2nd persistent script).</p>
+        </details>
+    </div>
+    <script src="../Index.js"></script>
+</body>
+</html>

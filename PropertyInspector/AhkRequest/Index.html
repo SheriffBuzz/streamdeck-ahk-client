@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <title>Ahk Request</title>
+    <link rel="stylesheet" href="../sdpi.css">
+</head>
+<body>
+    <div class="sdpi-item" id="my_private_file_selector">
+        <div class="sdpi-item-label">Ahk file</div>
+        <div class="sdpi-item-group file" id="filepickergroup">
+            <input class="sdpi-item-value" type="file" value="" id="ahk-file-path" accept=".exe" onchange="updateSettings()">
+            <label class="sdpi-file-info" for="ahk-file-path">no file...</label>
+            <label class="sdpi-file-label" for="ahk-file-path">Choose file...</label>
+        </div>
+    </div>
+    <div class="sdpi-item">
+        <div class="sdpi-item-label">A_Args</div>
+        <button class="sdpi-item-value" id="addargs" onclick="addAArg()">Add Arg</button>
+        <button class="sdpi-item-value" id="removeargs" onclick="removeAArg()">Remove Arg</button>
+    </div>
+    <div id="aargContainer">
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Arg</div>
+            <input class="sdpi-item-value" onchange="updateSettings()" value="" placeholder="Arg">
+        </div>
+    </div>
+
+    <script src="../Index.js"></script>
+</body>
+</html>
