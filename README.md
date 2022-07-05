@@ -4,7 +4,7 @@
 This plugin allows you to call functions in a persistent AHK script, without spawning a new AHK process or using hotkeys. Along with a **FunctionPostProcessor**, you can call a function and choose what to do with the result without hardcoding that functionality into your low level components.
 
 # Objectives
-  * Call ahk routines without starting a new AHK file each time.
+  * Call ahk routines from StreamDeck without starting a new AHK script each time.
     - A persistent script can maintain state between function calls, in memory
     - Perform faster if the function does any pre initialization on large data (reading from files, etc..)
     - Call a script that also has a GUI, as to not reload the GUI every time
