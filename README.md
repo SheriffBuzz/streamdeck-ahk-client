@@ -6,7 +6,7 @@ This plugin allows you to call functions in a persistent AHK script, without spa
 # Objectives
   * Call ahk routines from StreamDeck without starting a new AHK script each time.
     - A persistent script can maintain state between function calls, in memory
-    - Perform faster if the function does any pre initialization on large data (reading from files, etc..)
+    - Perform faster if the script does any pre initialization on large data (reading from files, etc..)
     - Call a script that also has a GUI, as to not reload the GUI every time
   * Provide an alternative to defining hotkeys directly in an ahk script.
     - Less maintainance and more compatability when working around programs that define many shortcuts
