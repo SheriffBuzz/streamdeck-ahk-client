@@ -17,6 +17,8 @@ This plugin allows you to call functions in a persistent AHK script, without spa
 
 # Project
 ### Links
+[ScriptHook.ahk](/../../../../SheriffBuzz/ScriptHook.ahk)
+
 [streamdeck-client-csharp](https://github.com/TyrenDe/streamdeck-client-csharp)
 
 This project was built on top of [streamdeck-timerandclock](https://github.com/TyrenDe/streamdeck-timerandclock). It was used as a template as I dont have prior c# experience.
